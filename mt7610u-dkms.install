@@ -1,0 +1,11 @@
+_upgrade() {
+    echo -e "\e[34;1m==>\e[39;1m NOTE: echo # mt7610u mac80211 > /lib/modprobe.d/mt7610u to autoload. Use modprobe to load it without restarting. \e[0m"
+}
+
+post_install() {
+    _upgrade
+}
+
+post_upgrade() {
+    _upgrade
+}
